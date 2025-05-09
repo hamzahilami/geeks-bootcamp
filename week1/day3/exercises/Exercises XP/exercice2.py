@@ -1,4 +1,4 @@
-class dog():
+class Dog():
     def __init__(self, name, heigh):
         self.name = name
         self.heigh = heigh
@@ -9,21 +9,21 @@ class dog():
         print(f"{self.name} jumps {self.heigh*2} cm high!")
 
 
-david_dog = dog("rex", 50)
+david_Dog = Dog("rex", 50)
 
-print(f"Dog name: {david_dog.name}, height: {david_dog.heigh} cm")
-david_dog.bark()
-david_dog.jump()
+print(f"Dog name: {david_Dog.name}, height: {david_Dog.heigh} cm")
+david_Dog.bark()
+david_Dog.jump()
 
-sarahs_dog = dog("teacup", 20)
-print(f"Dog name: {sarahs_dog.name}, height: {sarahs_dog.heigh} cm")
-sarahs_dog.bark()
-sarahs_dog.jump()
+sarahs_Dog = Dog("teacup", 20)
+print(f"Dog name: {sarahs_Dog.name}, height: {sarahs_Dog.heigh} cm")
+sarahs_Dog.bark()
+sarahs_Dog.jump()
 
 
-if david_dog.heigh > sarahs_dog.heigh:
-    print(f"{david_dog.name} is bigger than {sarahs_dog.name}")
-elif david_dog.heigh < sarahs_dog.heigh:
-    print(f"{sarahs_dog.name} is bigger than {david_dog.name}")
+if david_Dog.heigh > sarahs_Dog.heigh:
+    print(f"{david_Dog.name} is bigger than {sarahs_Dog.name}")
+elif david_Dog.heigh < sarahs_Dog.heigh:
+    print(f"{sarahs_Dog.name} is bigger than {david_Dog.name}")
 else:
-    print(f"{david_dog.name} and {sarahs_dog.name} are the same size")
+    print(f"{david_Dog.name} and {sarahs_Dog.name} are the same size")
