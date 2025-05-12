@@ -16,7 +16,7 @@ class Pagination:
     
     def go_to_page(self, page_number):
         if page_number > (self.total_pages):
-           print ("ValueError")
+           raise ValueError("invalid page number")
         else:
            self.current_page = page_number - 1
 
