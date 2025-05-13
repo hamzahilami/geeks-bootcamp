@@ -1,5 +1,5 @@
 import math
-
+import turtle
 
 class Circle:
 
@@ -64,10 +64,21 @@ class Circle:
 
 
 circle1 = Circle(radius=5, diameter=None)   
-circle2 = Circle(radius=3, diameter=None)
-circle3 = Circle(radius=None, diameter=10)
+circle2 = Circle(radius=20, diameter=None)
+circle_list = [circle1, circle2]
 print(circle1)  
         
 
+y = 0
+for cercle in circle_list:
+    y += cercle.diameter
+    turtle.speed(1)
+    turtle.hideturtle()
+    turtle.penup()
+    turtle.goto(0, y -circle1.radius)
+    turtle.pendown()
+    turtle.circle(circle1.radius)
+    turtle.penup()
 
+turtle.done()
         
