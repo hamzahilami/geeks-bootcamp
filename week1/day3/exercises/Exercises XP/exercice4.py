@@ -7,6 +7,7 @@ class Zoo:
         self.animals.append(new_animal)
         print(f"{new_animal} has been added to the zoo.")
 
+        
     def get_animals(self):
         print(self.animals)
         
@@ -44,7 +45,6 @@ new_york_zoo.add_animal("lion")
 new_york_zoo.add_animal("ape")
 new_york_zoo.add_animal("elk")
 new_york_zoo.get_animals()
-new_york_zoo.sell_animal("lion")
 new_york_zoo.get_animals()
 new_york_zoo.sort_animals()
 new_york_zoo.get_groups()
@@ -53,4 +53,5 @@ new_york_zoo.add_animal("elk")
 new_york_zoo.get_groups()
 new_york_zoo.get_animals()
 new_york_zoo.sort_animals()
-
+new_york_zoo.sell_animal("lion")
+new_york_zoo.get_groups()
