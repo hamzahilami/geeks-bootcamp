@@ -30,7 +30,7 @@
 
 SELECT COUNT(*) FROM FirstTab AS ft WHERE ft.id NOT IN ( SELECT id FROM SecondTab WHERE id = 5 );
 
--- it count 2 the rows where first tab id not 5
+-- it count 2 the rows where firsttab id is not 5
 
 
 SELECT COUNT(*) 
