@@ -1,4 +1,4 @@
-class MenuManager:
+class Menu_manager:
     def __init__(self):
         self.menu = [
             {"name": "Soup",
@@ -45,7 +45,7 @@ class MenuManager:
 
 
 
-item = MenuManager()
+item = Menu_manager()
 item.add_item("Pizza", 12, "A", True)
 item.update_item("Pizza", price=14, spice_level="B")
 item.remove_item("Pizza")
