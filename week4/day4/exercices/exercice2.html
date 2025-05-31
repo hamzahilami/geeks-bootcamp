@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <form action="" method="post">
-      <label for="name">Name: </label>
-      <input type="message" name="name" id="name" /><br />
-      <label for="message"></label>
-      <label for="message">Message:</label><br />
-      <textarea
-        id="message"
-        name="message"
-        rows="4"
-        cols="50"
-        placeholder="Write your message here"
-      ></textarea
-      ><br />
-      <button type="submit">submit</button>
-    </form>
-  </body>
-  <script src="exercise1.js"></script>
-</html>
+<html>
+<head>
+    <title>Form POST Example</title>
+</head>
+<body>
 
+<form method="POST" action="">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+    <input type="submit" value="Send">
+</form>
+
+</body>
+</html>
 
 <!--the information is sent to the server as part of the data body and will not be visible in the URL box in the user’s browser-->
