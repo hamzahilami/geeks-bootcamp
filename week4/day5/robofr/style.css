@@ -1,0 +1,58 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+#search {
+  width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 30px;
+}
+
+.robot-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.robot-card {
+  background-color: #ffffff10;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.robot-card:hover {
+  transform: scale(1.05);
+}
+
+.robot-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.robot-card h2 {
+  margin: 10px 0 5px;
+  font-size: 1.3rem;
+}
+
+.robot-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
