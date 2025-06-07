@@ -1,0 +1,139 @@
+/* style.css */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif; /* classic, vintage vibe */
+}
+
+body {
+    background-color: #f7f3ea; /* warm off-white */
+    color: #5a4631; /* dark brown */
+    padding: 30px 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: #fff8f0; /* creamy off-white */
+    padding: 35px 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 15px rgba(90, 70, 49, 0.15);
+    border: 1px solid #dcc9b6; /* subtle border for texture */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #7b6a4a;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.quote-display {
+    text-align: center;
+    margin-bottom: 35px;
+    padding: 0 15px;
+}
+
+.quote-text {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #6e5849;
+    font-weight: 500;
+    line-height: 1.4;
+    border-left: 4px solid #b89f84; /* subtle blockquote style */
+    padding-left: 15px;
+}
+
+.quote-author {
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #7b6a4a;
+    font-style: normal;
+    font-family: 'Georgia', serif;
+}
+
+.quote-likes {
+    color: #c04e01; /* burnt orange */
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.main-btn, .small-btn {
+    background-color: #b89f84; /* muted brown */
+    color: #fff8f0;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 6px;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 6px rgba(184, 159, 132, 0.5);
+}
+
+.main-btn:hover, .small-btn:hover {
+    background-color: #a28868;
+    box-shadow: 0 4px 12px rgba(162, 136, 104, 0.7);
+}
+
+.controls {
+    margin-bottom: 30px;
+}
+
+.action-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.add-quote-form, .filter-form {
+    background-color: #f0e8dc;
+    padding: 18px 20px;
+    border-radius: 12px;
+    margin-bottom: 22px;
+    border: 1px solid #d6c7aa;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 600;
+    color: #7b6a4a;
+    letter-spacing: 0.03em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+textarea, input[type="text"] {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1.8px solid #b89f84;
+    border-radius: 8px;
+    resize: vertical;
+    font-size: 1em;
+    font-family: 'Georgia', serif;
+    color: #5a4631;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus, input[type="text"]:focus {
+    border-color: #a28868;
+    box-shadow: 0 0 6px #a2886877;
+    outline: none;
+}
+
+.filter-navigation {
+    text-align: center;
+    margin-top: 12px;
+}
