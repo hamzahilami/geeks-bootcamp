@@ -71,32 +71,32 @@ const robots = [
   }
 ];
 
-// DOM references
-const cardContainer = document.getElementById('cardContainer');
-const searchBox = document.getElementById('searchBox');
+const container = document.getElementById('robot-container');
+const searchBox = document.getElementById('search');
 
-// Function to display robot cards
-function displayCards(robotsList) {
-  cardContainer.innerHTML = '';
-  robotsList.forEach(robot => {
+// Function to display robots
+function displayRobots(robotsToDisplay) {
+  container.innerHTML = '';
+  robotsToDisplay.forEach(robot => {
     const card = document.createElement('div');
-    card.className = 'card';
+    card.className = 'robot-card';
     card.innerHTML = `
-      <img src="${robot.image}" alt="${robot.name}" />
-      <h3>${robot.name}</h3>
+      <img src="${robot.image}" alt="${robot.name}">
+      <h2>${robot.name}</h2>
       <p>${robot.email}</p>
     `;
-    cardContainer.appendChild(card);
+    container.appendChild(card);
   });
 }
 
-// Filter function
-searchBox.addEventListener('input', (event) => {
+// Filter robots on input
+searchBox.addEventListener('input', () => {
+  const query = searchBox.value.toLowerCase();
   const filtered = robots.filter(robot =>
-    robot.name.toLowerCase().includes(event.target.value.toLowerCase())
+    robot.name.toLowerCase().includes(query)
   );
-  displayCards(filtered);
+  displayRobots(filtered);
 });
 
-// Initial render
-displayCards(robots);
+// Initial display
+displayRobots(robots);
