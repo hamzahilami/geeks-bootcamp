@@ -1,61 +1,44 @@
-async function getPerson(rand) {
+const btn = document.getElementById("getCharacter");
+const loading = document.getElementById("loading");
+const error = document.getElementById("error");
+const character = document.getElementById("character");
+
+const nameEl = document.getElementById("name");
+const heightEl = document.getElementById("height");
+const genderEl = document.getElementById("gender");
+const birthYearEl = document.getElementById("birthYear");
+const homeworldEl = document.getElementById("homeworld");
+
+btn.addEventListener("click", async () => {
+  const randomId = Math.floor(Math.random() * 83) + 1;
+
+  loading.classList.remove("hidden");
+  error.classList.add("hidden");
+  character.style.display = "none";
+
   try {
-    const response = await fetch(`https://www.swapi.tech/api/people/${rand}`);
-    if (!response.ok) {
-      throw new Error("Something went wrong!");
-    }
-    const data = await response.json();
-    return data;
-  } catch (e) {
-    console.log(e);
+   
+    const res = await fetch(`https://www.swapi.tech/api/people/${randomId}`);
+    const data = await res.json();
+
+    const props = data.result.properties;
+
+  
+    const homeworldRes = await fetch(props.homeworld);
+    const homeworldData = await homeworldRes.json();
+
+
+    nameEl.textContent = props.name;
+    heightEl.textContent = props.height;
+    genderEl.textContent = props.gender;
+    birthYearEl.textContent = props.birth_year;
+    homeworldEl.textContent = homeworldData.result.properties.name;
+
+    character.style.display = "block";
+  } catch (err) {
+    console.error(err);
+    error.classList.remove("hidden");
+  } finally {
+    loading.classList.add("hidden");
   }
-}
-
-async function getWorld(url) {
-  try {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error("Something went wrong!");
-    }
-    const data = await response.json();
-    return data;
-  } catch (e) {
-    console.log(e);
-  }
-}
-
-
-document.querySelector("button").addEventListener("click", async (e) => {
-  const load = document.querySelector(".fa-solid");
-  load.style.display = "block";
-  const rand = Math.floor(Math.random() * 83) + 1;
-  let data = await getPerson(rand);
-  load.style.display = "none";
-
-  data = data.result.properties;
-  const box = document.querySelector(".box");
-  box.querySelectorAll("*:not(.fa-solid)").forEach((el) => el.remove());
-
-  const name = document.createElement("h1");
-  name.innerText = data.name;
-
-  const height = document.createElement("p");
-  height.innerText = `Height: ${data.height}`;
-
-  const gender = document.createElement("p");
-  gender.innerText = `Gender: ${data.gender}`;
-
-  const birth = document.createElement("p");
-  birth.innerText = `Birth Year: ${data.birth_year}`;
-  let world = await getWorld(data.homeworld);
-  const worldName = world.result.properties.name;
-  const home = document.createElement("p");
-  home.innerText = `Home World: ${worldName}`;
-
-  box.appendChild(name);
-  box.appendChild(height);
-  box.appendChild(gender);
-  box.appendChild(birth);
-  box.appendChild(home);
 });
-
