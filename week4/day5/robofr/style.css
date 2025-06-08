@@ -1,58 +1,76 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-  color: white;
-  text-align: center;
   margin: 0;
-  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #6b46c1; 
+  background-image: url('https://raw.githubusercontent.com/devtlv/studentsGitHub/refs/heads/master/JS/Week%204/Day5/Mini%20Projects/Mini%20Project%201%20(Robots)/circuit-pattern.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6ee7b7;
+  padding: 20px 40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-#search {
+header h1 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.3rem;
+  color: #111827;
+  margin: 0;
+}
+
+#searchBox {
+  padding: 10px 16px;
   width: 300px;
-  padding: 10px;
-  font-size: 1rem;
-  border-radius: 10px;
   border: none;
-  margin-bottom: 30px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  outline: none;
 }
 
-.robot-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
-  padding: 0 20px;
+  padding: 40px;
 }
 
-.robot-card {
-  background-color: #ffffff10;
-  border-radius: 15px;
+.card {
+  background-color: #34d399;
+  border-radius: 16px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s ease;
+  width: 250px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-.robot-card:hover {
-  transform: scale(1.05);
-}
-
-.robot-card img {
-  width: 200px;
-  height: 200px;
+.card img {
+  width: 100%;
   border-radius: 50%;
+  height: auto;
 }
 
-.robot-card h2 {
+.card h2, .card p {
+  font-family: 'Orbitron', monospace;
+  word-wrap: break-word;
+}
+
+.card h2 {
+  font-size: 1.1rem;
   margin: 10px 0 5px;
-  font-size: 1.3rem;
+  color: #111;
 }
 
-.robot-card p {
-  margin: 5px 0;
-  font-size: 0.95rem;
+.card p {
+  font-size: 0.9rem;
+  color: #333;
 }
