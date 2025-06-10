@@ -3,3 +3,5 @@ export const persons = [
   { name: "Bob", age: 25, location: "London" },
   { name: "Charlie", age: 35, location: "Sydney" },
 ];
+
+module.exports = persons;
