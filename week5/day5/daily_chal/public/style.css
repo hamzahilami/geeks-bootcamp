@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fdf6e3;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.game-container {
+  margin: 50px auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#emoji-display {
+  font-size: 4rem;
+  margin: 20px 0;
+}
+
+form label {
+  display: block;
+  margin: 5px 0;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+#reset-game {
+  background-color: #dc3545;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-top: 10px;
+  width: 80%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
