@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "Hilami",
+    "lastName": "hamza",
+    "email": "hilamihamza02@gmail.com",
+    "username": "HAMZA.HILAMI-ETU",
+    "password": "$2b$10$34Q5g8iMNRBmmckIiv7ju.YoAuCJRNsacD31amCgdf9dZj/JMSdSu"
+  },
+  {
+    "id": 2,
+    "name": "ali",
+    "lastName": "HILAMI",
+    "email": "hilamihamza@gmail.com",
+    "username": "Namevx",
+    "password": "$2b$10$iLC09K6sEGKKAss/9u.nMuLNrzA7kmcz/P2ncMn7fjFlgyEnFlbh."
+  }
+]
