@@ -1,0 +1,80 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+label {
+  font-weight: 500;
+  color: #444;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004c99;
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+h3 {
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin: 0.25rem 0;
+}

@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 2rem;
+}
+#quiz-container {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+#feedback {
+  margin-top: 1rem;
+  font-weight: bold;
+  min-height: 1.2em;
+}
+#final-score {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}

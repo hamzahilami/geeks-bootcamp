@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.carousel .slide img {
+  height: 400px;
+  object-fit: cover;
+}
